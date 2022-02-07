@@ -32,13 +32,21 @@
     console.log (blogTitles);
     for(const h2 of blogTitles)
     {
-        console.log(h2.innerText)
+        // console.log(h2.innerText)
     }
     const blogDetails = document.getElementsByTagName('p');
     for(const p of blogDetails)
     {
-        console.log(p.innerText);
+        // console.log(p.innerText);
     }
+
+    /* Capture and change Element by using getElementById */
+
+    const secondTitle = document.getElementById('second-title');
+    secondTitle.style.textAlign='center';
+    secondTitle.style.backgroundColor = 'salmon';
+    secondTitle.style.padding='20px';
+    secondTitle.style.borderRadius='30px';
    </script>
 </body>
 </html>
