@@ -11,11 +11,11 @@
    <main>
        <section>
           <!-- article*3>h2{My awsome blog-$}+p> -->
-          <article>
+          <article class="blog">
               <h2>My awsome blog-1</h2>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod soluta repellendus delectus ut, perferendis temporibus excepturi ab? Distinctio aspernatur, ut dolorum totam reiciendis, doloribus dignissimos quisquam iste, aut dolore ratione?</p>
           </article>
-          <article>
+          <article class="blog">
               <h2 id="second-title">My awsome blog-2</h2>
               <p>Quia accusamus, tempore sint dolorem nemo quisquam tempora atque optio officiis delectus rerum ipsa. Magnam, alias. Maxime qui, id neque beatae est rem quia nobis nesciunt? Reprehenderit debitis facilis laudantium.</p>
           </article>
@@ -47,6 +47,17 @@
     secondTitle.style.backgroundColor = 'salmon';
     secondTitle.style.padding='20px';
     secondTitle.style.borderRadius='30px';
+
+    /* getElementsByClassName  */
+    const blogs =document.getElementsByClassName('blog');
+    for (const blog of blogs)
+    {
+        //   console.log(blog);
+        blog.style.border = '3px solid red';
+        blog.style.margin = '5px';
+        blog.style.padding = '7px';
+        blog.style.borderRadius='20px';
+    }
    </script>
 </body>
 </html>
